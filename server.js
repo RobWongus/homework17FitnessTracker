@@ -22,6 +22,11 @@ app.use(compression());
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Fitness", { useUnifiedTopology: true, useNewUrlParser: true });
 
+// mdb.on('error', console.error.bind(console, 'connection error:'));
+// mdb.once('open', function() {
+//   console.log("Connected to MongoDB!")
+// });
+
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
