@@ -13,7 +13,7 @@ let workout = new Schema (
         {
             type: {
                 type: String,
-                trim: true,
+                trimy: true,
                 require: "Enter type of exercise."
             },
             name: {
