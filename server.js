@@ -21,37 +21,18 @@ app.use(logger("dev"));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 app.use(express.static("public"));
 
-
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Fitness", { useUnifiedTopology: true, useNewUrlParser: true });
-
-
 
 // mdb.on('error', console.error.bind(console, 'connection error:'));
 // mdb.once('open', function() {
 //   console.log("Connected to MongoDB!")
 // });
 
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+app.use(require("./routes/apiRoutes.js")(app));
+app.use(require("./routes/htmlRoutes.js")(app));
 
-
-
-// app.post("/submit", ({ body }, res) => {
-//   const user = new User(body);
-//   user.coolifier();
-//   user.makeCool();
-
-//   User.create(user)
-//     .then(dbUser => {
-//       res.json(dbUser);
-//     })
-//     .catch(err => {
-//       res.json(err);
-//     });
-// });
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);

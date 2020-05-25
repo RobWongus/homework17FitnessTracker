@@ -35,7 +35,7 @@ Track workouts. Be able to add new worlouts and get rid of workouts ehn they hav
 none
 
 ## Updates
-Back end needs finishing. Routes are missing a connection in apiRoutes. 
+Back end needs finishing. Routes are missing a connection in apiRoutes. Fix error on line 635 in the front end index.js folder. 
 
 
 ## License
