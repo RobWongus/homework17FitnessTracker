@@ -29,3 +29,8 @@ module.exports = function(app) {
         })
     });
 }
+
+app.put("/api/workout", function(request, response){
+    
+})
+module.exports = router;
