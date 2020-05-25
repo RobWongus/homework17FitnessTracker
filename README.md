@@ -7,7 +7,7 @@
 * [Tests](#Tests)
 * [Usage](#Usage)
 * [Contributors](#Contributors)
-* [Questions](#Questions)
+* [Questions](#Updates)
 * [License](#License)
 * [Email](#Email)
 
@@ -34,8 +34,8 @@ Track workouts. Be able to add new worlouts and get rid of workouts ehn they hav
 
 none
 
-## Questions
-
+## Updates
+Back end needs finishing. Routes are missing a connection in apiRoutes. 
 
 
 ## License
